@@ -1,0 +1,9 @@
+This script is a quality of life script
+to improve the process of mounting a remote disk.
+Instead of hassling with several commands and checking
+whether the disk is mounted or not, you can simply
+choose the reset option from the menu and everything else 
+is automated (you will still be prompted for required passwords).
+
+The mounting commands are run with switches to attempt to automatically 
+reconnect in case of temporary disconnection (in case of poor internet).

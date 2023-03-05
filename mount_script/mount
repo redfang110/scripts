@@ -1,0 +1,11 @@
+#!/bin/bash
+
+printf 'Running mounting script... \n-----Would you like to----- \n--1: connect mount \n--2: restart mount \n--3: disconnect mount\n'
+read input
+case $input in "1") sudo sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3,allow_other,defer_permissions hall0928@pyrite.las.iastate.edu:/ ~/School/com_s_327/pyrite_mount ;;
+"2") sudo diskutil unmount force ~/School/com_s_327/pyrite_mount
+sudo sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3,allow_other,defer_permissions hall0928@pyrite.las.iastate.edu:/ ~/School/com_s_327/pyrite_mount 
+printf 'Restart mount successful' ;;
+"3") sudo diskutil unmount force ~/School/com_s_327/pyrite_mount ;;
+*) printf 'Invalid input...\nTerminating script...\n' ;;
+esac
