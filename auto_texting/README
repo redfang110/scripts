@@ -1,0 +1,14 @@
+This program is designed mostly for practical jokes, 
+but has some theoretically useful application. 
+
+The program spams texts from a predetermined text file 
+to a predetermined number line by line (one line at a time). 
+This means you can have a whole movie script copy/pasted
+into a text file, run the script, and watch thousands
+of texts send to the inputted number one at a time.
+
+The program runs a menu which asks the user whether they would like to 
+- Add contact to contact script
+- Add message file to folder of message files
+- Choose a file from library to text to a number from library
+- Quit script

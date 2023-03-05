@@ -1,0 +1,27 @@
+#!/bin/bash
+
+number=0
+printf 'Starting Text Script...\n'
+
+while [[ "$number" != "4" ]]; do
+    printf '\nSelect an option...\n1: Add contact \n2: Add message file \n3: Run script\n4: Quit\n'
+    read number
+
+    case $number in
+        1)
+            ./.addContact
+            ;;
+        2)
+            ./.addFile
+            ;;
+        3)
+            ./.runTextScript
+            ;;
+        4)
+            printf 'Quitting Text Script...\n\n'
+            ;;
+        *)
+            printf 'Invalid input... \nKillng script...\n\n'
+            ;;
+    esac
+done
